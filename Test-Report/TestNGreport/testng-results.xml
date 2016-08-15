@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test" duration-ms="21851" started-at="2016-08-10T10:01:34Z" finished-at="2016-08-10T10:01:56Z">
+    <groups>
+      <group name="login">
+        <method signature="TNGAnnotations.NeuspesnoLogovanje()[pri:0, instance:test.login.TNGAnnotations@67117f44]" name="NeuspesnoLogovanje" class="test.login.TNGAnnotations"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="one script" duration-ms="21851" started-at="2016-08-10T10:01:34Z" finished-at="2016-08-10T10:01:56Z">
+      <class name="test.login.TNGAnnotations">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.login.TNGAnnotations@67117f44]" name="beforeClass" is-config="true" duration-ms="16301" started-at="2016-08-10T12:01:34Z" finished-at="2016-08-10T12:01:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="NeuspesnoLogovanje()[pri:0, instance:test.login.TNGAnnotations@67117f44]" name="NeuspesnoLogovanje" duration-ms="3783" started-at="2016-08-10T12:01:51Z" finished-at="2016-08-10T12:01:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NeuspesnoLogovanje -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.login.TNGAnnotations@67117f44]" name="afterClass" is-config="true" duration-ms="1703" started-at="2016-08-10T12:01:54Z" finished-at="2016-08-10T12:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.login.TNGAnnotations -->
+    </test> <!-- one script -->
+  </suite> <!-- test -->
+</testng-results>

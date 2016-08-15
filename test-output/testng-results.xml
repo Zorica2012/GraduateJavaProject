@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21574" started-at="2016-08-08T08:38:55Z" finished-at="2016-08-08T08:39:16Z">
+  <suite name="Default suite" duration-ms="21345" started-at="2016-08-15T07:45:30Z" finished-at="2016-08-15T07:45:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21574" started-at="2016-08-08T08:38:55Z" finished-at="2016-08-08T08:39:16Z">
-      <class name="test.LoginU">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.LoginU@6d8a00e3]" name="beforeClass" is-config="true" duration-ms="12936" started-at="2016-08-08T10:38:55Z" finished-at="2016-08-08T10:39:08Z">
+    <test name="Default test" duration-ms="21345" started-at="2016-08-15T07:45:30Z" finished-at="2016-08-15T07:45:52Z">
+      <class name="test.account.MyAccountTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.account.MyAccountTest@4de8b406]" name="beforeClass" is-config="true" duration-ms="17527" started-at="2016-08-15T09:45:30Z" finished-at="2016-08-15T09:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:test.LoginU@6d8a00e3]" name="f" duration-ms="7877" started-at="2016-08-08T10:39:08Z" finished-at="2016-08-08T10:39:16Z">
+        <test-method status="PASS" signature="verifyArea()[pri:0, instance:test.account.MyAccountTest@4de8b406]" name="verifyArea" duration-ms="127" started-at="2016-08-15T09:45:48Z" finished-at="2016-08-15T09:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyArea -->
+        <test-method status="FAIL" signature="verifyProfileAccount()[pri:0, instance:test.account.MyAccountTest@4de8b406]" name="verifyProfileAccount" duration-ms="59" started-at="2016-08-15T09:45:48Z" depends-on-methods="test.account.MyAccountTest.verifyArea" finished-at="2016-08-15T09:45:48Z">
           <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[You are logged in.]]>
-            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: You are logged in.
-	at test.LoginU.f(LoginU.java:33)
+              <![CDATA[java.lang.AssertionError
+	at library.util.Verification.print(Verification.java:23)
+	at library.util.Verification.verifyString(Verification.java:39)
+	at test.account.MyAccountTest.verifyProfileAccount(MyAccountTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -49,12 +52,12 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.LoginU@6d8a00e3]" name="afterClass" is-config="true" duration-ms="725" started-at="2016-08-08T10:39:16Z" finished-at="2016-08-08T10:39:16Z">
+        </test-method> <!-- verifyProfileAccount -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.account.MyAccountTest@4de8b406]" name="afterClass" is-config="true" duration-ms="3588" started-at="2016-08-15T09:45:48Z" finished-at="2016-08-15T09:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- test.LoginU -->
+      </class> <!-- test.account.MyAccountTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
